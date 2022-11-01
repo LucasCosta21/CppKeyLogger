@@ -69,17 +69,17 @@ int main()
                         break;
                     default:
                     	if(event.Event.KeyEvent.wVirtualKeyCode >= 65 && event.Event.KeyEvent.wVirtualKeyCode <= 90)
-						{
-							std::cout << char(event.Event.KeyEvent.wVirtualKeyCode + correcaoCap);
-						} 
-						// Registro de números do numpad, caso o NumLock esteja ativado
-						else if(numLockLigado)
-						{
-							if(event.Event.KeyEvent.wVirtualKeyCode >= 97 && event.Event.KeyEvent.wVirtualKeyCode <= 105)
-							{
-								std::cout << char(event.Event.KeyEvent.wVirtualKeyCode - 48);
-							}
-						}
+			{
+				std::cout << char(event.Event.KeyEvent.wVirtualKeyCode + correcaoCap);
+			} 
+			// Registro de números do numpad, caso o NumLock esteja ativado
+			else if(numLockLigado)
+			{
+				if(event.Event.KeyEvent.wVirtualKeyCode >= 97 && event.Event.KeyEvent.wVirtualKeyCode <= 105)
+				{
+					std::cout << char(event.Event.KeyEvent.wVirtualKeyCode - 48);
+				}
+			}
 						
                 }
         }
