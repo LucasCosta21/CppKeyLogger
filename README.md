@@ -1,2 +1,2 @@
 # CppKeyLogger
-🔑🦠 KeyLogger feito em C++ 🔑🦠
+🔑🦠 KeyLogger básico feito em C++
